@@ -21,6 +21,7 @@
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s71-cB-0W6">
                         <rect key="frame" x="16" y="6" width="60" height="60"/>
+                        <color key="backgroundColor" red="0.37647058820000001" green="0.1176470588" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="s71-cB-0W6" secondAttribute="height" multiplier="1:1" id="2Ju-pB-mJb"/>
                             <constraint firstAttribute="height" constant="60" id="hXy-m6-2Tj"/>
@@ -32,8 +33,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iD-Zu-GNc">
-                        <rect key="frame" x="92" y="33" width="329" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iD-Zu-GNc">
+                        <rect key="frame" x="92" y="42.5" width="329" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -47,7 +48,8 @@
                     <constraint firstItem="s71-cB-0W6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="dMt-fa-hrh"/>
                     <constraint firstItem="s71-cB-0W6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="hA5-ia-ZDP"/>
                     <constraint firstItem="tTI-3K-C3c" firstAttribute="leading" secondItem="s71-cB-0W6" secondAttribute="trailing" constant="16" id="kHY-0k-3Sv"/>
-                    <constraint firstItem="2iD-Zu-GNc" firstAttribute="top" secondItem="tTI-3K-C3c" secondAttribute="bottom" constant="0.5" id="nZO-SS-cVf"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2iD-Zu-GNc" secondAttribute="bottom" constant="10" id="nMQ-mX-s90"/>
+                    <constraint firstItem="2iD-Zu-GNc" firstAttribute="top" secondItem="tTI-3K-C3c" secondAttribute="bottom" constant="10" id="nZO-SS-cVf"/>
                     <constraint firstAttribute="trailing" secondItem="tTI-3K-C3c" secondAttribute="trailing" constant="25" id="whE-oN-9O8"/>
                 </constraints>
             </tableViewCellContentView>
